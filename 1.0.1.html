@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ICHOOSE DAO</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
+
+    <link href="https://unpkg.com/cirrus-ui" type="text/css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        /* background-image: url(lohp_1302x955.png); */
+        background: url("D:\\Code\\New_start\\Web\\THE-PAST\\The-book\\route\\1.png");
+        /* background: url("D:\\Code\\New_start\\Web\\THE-PAST\\The-book\\route\\holder.png"); */
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: auto;
+        height: auto;
+        background-size: cover;
+      }
+
+      .content {
+        /* height: 600px; */
+        width: auto;
+        background-color: white;
+      }
+      .card {
+        max-width: 256px; /*320px*/
+        height: calc(height * 0.8);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEAD -->
+    <div class="header header-fixed u-unselectable header-animated">
+      <div class="header-brand">
+        <div class="nav-item no-hover">
+          <a><h6 class="title">ICHOOSE</h6></a>
+        </div>
+        <div class="nav-item nav-btn" id="header-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="header-nav" id="header-menu">
+        <div class="nav-left">
+          <div class="nav-item text-center">
+            <a href="#">
+              <span class="icon">
+                <i class="fab fa-wrapper fa-github" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+          <div class="nav-item text-center">
+            <a href="#">
+              <span class="icon">
+                <i class="fab fa-wrapper fa-slack" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+          <div class="nav-item text-center">
+            <a href="#">
+              <span class="icon">
+                <i class="fab fa-wrapper fa-twitter" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+          <div class="nav-item has-sub toggle-hover" id="dropdown">
+            <a class="nav-dropdown-link">Animated</a>
+            <ul class="dropdown-menu dropdown-animated" role="menu">
+              <li role="menu-item"><a href="#">First Item</a></li>
+              <li role="menu-item"><a href="#">Second Item</a></li>
+              <li role="menu-item"><a href="#">Third Item</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="nav-right">
+          <div class="nav-item active">
+            <a href="#">Active</a>
+          </div>
+          <div class="nav-item">
+            <a href="#">Link 1</a>
+          </div>
+          <div class="nav-item has-sub" id="dropdown">
+            <a class="nav-dropdown-link">Click Me</a>
+            <ul class="dropdown-menu" role="menu">
+              <li role="menu-item"><a href="#">First Item</a></li>
+              <li role="menu-item"><a href="#">Second Item</a></li>
+              <li role="menu-item"><a href="#">Third Item</a></li>
+              <li class="dropdown-menu-divider"></li>
+              <li role="menu-item"><a href="#">Fourth Item</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="introduction"></div>
+    <div class="function"></div>
+
+    <div class="space space--xl"></div>
+
+    <div class="flex" style="height: 800px; background-color: white"></div>
+
+    <!-- PROFILE / CARD -->
+    <!-- <div class="profile"></div> -->
+
+    <div class="u-flex u-justify-center">
+      <!-- One -->
+      <ul class="no-bullets mx-1">
+        <li>
+          <!-- Placeholder类 无实用，仅方便区分用 -->
+          <div class="card Placeholder" style="height: 150px">
+            <div class="content px-1 u-center">
+              <p>This is just a Placeholder</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card real_card card--slide-up">
+            <div class="card__container">
+              <div
+                class="card__image"
+                style="
+                  background-image: url('https://unsplash.it/640/480?random&amp;blur');
+                "
+              ></div>
+            </div>
+            <div class="card__mobile-title px-1">
+              <div class="content">
+                <div class="tile">
+                  <div class="tile__container">
+                    <p class="tile__title">Kangaroo Valley Safari</p>
+                    <p class="tile__subtitle">By John Doe</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__body content px-1">
+              <p>
+                Located two hours south of Sydney in the Southern Highland of
+                New South Wales...
+              </p>
+            </div>
+            <div class="card__footer content">2 min. read 22 comments</div>
+          </div>
+        </li>
+      </ul>
+      <!-- End One -->
+
+      <!-- Two -->
+      <ul class="no-bullets mx-1">
+        <li>
+          <div class="card Placeholder" style="height: 290px">
+            <div class="content px-1 u-center">
+              <p>This is just a Placeholder</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card" style="max-height: 510px">
+            <div class="card__container">
+              <div
+                class="card__image"
+                style="
+                  background-image: url('D:\\Code\\New_start\\Web\\THE-PAST\\The-book\\route\\1.png');
+                "
+              ></div>
+              <div class="card__title-container">
+                <p class="title">Title</p>
+                <span class="subtitle">Subtitle</span>
+              </div>
+            </div>
+            <div class="content px-1">
+              <p>
+                Text and other content belong here, inside a
+                <code>content</code> div.
+              </p>
+            </div>
+            <div class="card__action-bar u-center">
+              <button class="btn-link outline">Buttons</button>
+              <button class="btn-link outline">Go here</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- End Two -->
+
+      <!-- Three -->
+      <ul class="no-bullets mx-1">
+        <li>
+          <div class="card Placeholder" style="height: 130px">
+            <div class="content px-1 u-center">
+              <p>This is just a Placeholder</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card" style="max-height: 510px">
+            <div class="card__container">
+              <div
+                class="card__image"
+                style="
+                  background: url('D:\\Code\\New_start\\Web\\THE-PAST\\The-book\\route\\holder.png');
+                  background-position: center;
+                "
+              ></div>
+              <div class="card__title-container">
+                <p class="title">Title</p>
+                <span class="subtitle">Subtitle</span>
+              </div>
+            </div>
+            <div class="content px-1">
+              <p>
+                Text and other content belong here, inside a
+                <code>content</code> div.
+              </p>
+            </div>
+            <div class="card__action-bar u-center">
+              <button class="btn-link outline">Buttons</button>
+              <button class="btn-link outline">Go here</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- End Three -->
+
+      <!-- Four -->
+      <ul class="no-bullets mx-1">
+        <li>
+          <div class="card Placeholder" style="height: 250px">
+            <div class="content px-1 u-center">
+              <p>This is just a Placeholder</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card" style="max-height: 510px">
+            <div class="card__container">
+              <div
+                class="card__image"
+                style="
+                  background-image: url('D:\\Code\\New_start\\Web\\THE-PAST\\The-book\\route\\yuki.png');
+                  background-position: center;
+                "
+              ></div>
+              <div class="card__title-container">
+                <p class="title">Title</p>
+                <span class="subtitle">Subtitle</span>
+              </div>
+            </div>
+            <div class="content px-1">
+              <p>
+                Text and other content belong here, inside a
+                <code>content</code> div.
+              </p>
+            </div>
+            <div class="card__action-bar u-center">
+              <button class="btn-link outline">Buttons</button>
+              <button class="btn-link outline">Go here</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- End Four -->
+    </div>
+    <!-- End flex -->
+    <!-- END OF PROFILE / CARD -->
+
+    <div class="space space--xl"></div>
+    <div class="flex" style="height: 800px; background-color: white"></div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <h6 class="footer__title text-white uppercase">ICHOOSE dao</h6>
+      <div class="content">
+        <!-- <div class="divider"></div> -->
+
+        <div class="row">
+          <div class="col-4">
+            <ul class="no-bullets">
+              <a href="!#">
+                <li class="footer__list-item">Home</li>
+              </a>
+              <a href="!#">
+                <li class="footer__list-item">Sign Up</li>
+              </a>
+              <a href="!#">
+                <li class="footer__list-item">Downloads</li>
+              </a>
+              <ul></ul>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul class="no-bullets">
+              <a href="!#">
+                <li class="footer__list-item">Company Information</li>
+              </a>
+              <a href="!#">
+                <li class="footer__list-item">Contact Us</li>
+              </a>
+              <a href="!#">
+                <li class="footer__list-item">Reviews</li>
+              </a>
+              <ul></ul>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul class="no-bullets">
+              <a href="!#">
+                <li class="footer__list-item">FAQ</li>
+              </a>
+              <a href="!#">
+                <li class="footer__list-item">Help Desk</li>
+              </a>
+              <a href="!#">
+                <li class="footer__list-item">Forums</li>
+              </a>
+              <ul></ul>
+            </ul>
+          </div>
+          <div class="space space--lg"></div>
+        </div>
+      </div>
+      <p class="subtitle">Company 漏 2018.</p>
+    </footer>
+  </body>
+</html>
